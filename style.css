@@ -1,0 +1,125 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+    color: #333;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #1c1e21;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.joke-area {
+    background-color: #282c34; /* Dark background for code */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.code-header {
+    background-color: #3c4048;
+    padding: 8px 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #d1d5db;
+    font-size: 0.85em;
+}
+
+.code-header span {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+#copyBtn {
+    background-color: #4a4e58;
+    color: #d1d5db;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.2s ease;
+}
+
+#copyBtn:hover {
+    background-color: #5a5e68;
+}
+
+#copyBtn svg {
+    vertical-align: middle;
+}
+
+#codeOutput {
+    display: block;
+    color: #abb2bf; /* Light text for code */
+    padding: 15px;
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    font-size: 0.95em;
+    line-height: 1.5;
+    min-height: 120px;
+}
+
+#newJokeBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+#newJokeBtn:hover {
+    background-color: #0056b3;
+}
+
+#newJokeBtn:active {
+    background-color: #004085;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    #newJokeBtn {
+        padding: 10px 15px;
+        font-size: 0.95em;
+    }
+    #codeOutput {
+        font-size: 0.9em;
+        min-height: 100px;
+    }
+}
+
